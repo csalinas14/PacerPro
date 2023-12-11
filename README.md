@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The soft delete works by having an Item model with an deleted_at attribute which we set to DateTime.now.to_i. The DateTime class is responsible for the time, the now returns the time at which the code is excuted, and the to_i gets rid of the microseconds which helps for testing.
